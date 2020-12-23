@@ -2621,3 +2621,112 @@ body {
     padding: 0px 31px;
   }
 }
+.banner_checkcharges .container {
+  max-width: 1100px;
+}
+@media (min-width: 1200px) {
+  .banner_checkcharges .container {
+    padding: 0px;
+  }
+}
+.banner_checkcharges .container .row_event label {
+  font-weight: normal !important;
+  font-size: 16px !important;
+}
+.banner_checkcharges .container p.title {
+  margin-bottom: 25px;
+}
+.banner_checkcharges ul.characteristics_of_goods {
+  flex-wrap: wrap;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.banner_checkcharges ul.characteristics_of_goods li.current {
+  background: #FFE400;
+}
+.banner_checkcharges ul.characteristics_of_goods li {
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 12px;
+  display: grid;
+}
+.banner_checkcharges ul.characteristics_of_goods li div {
+  height: 40px;
+}
+@media (min-width: 1200px) {
+  .banner_checkcharges ul.characteristics_of_goods li {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+}
+.banner_checkcharges ul.characteristics_of_goods li img {
+  margin: 0 auto;
+}
+.banner_checkcharges .tab_content_bottom {
+  padding: 20px 15px !important;
+}
+.banner_checkcharges .tab_content_bottom .row_select label {
+  font-weight: normal !important;
+  font-size: 16px !important;
+  height: 0px !important;
+}
+.banner_checkcharges .tab_content_bottom .row_select select {
+  height: 40px !important;
+  background: white;
+}
+.banner_checkcharges input.send {
+  background: #FCD804;
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px 39px;
+  color: black !important;
+  display: flex;
+  justify-content: center;
+  max-width: 150px !important;
+  margin: 0 auto !important;
+  float: none;
+  font-size: 18px;
+}
+
+.col_right label {
+  margin-bottom: 20px;
+}
+
+.checkcharges .container {
+  max-width: 1100px;
+}
+.checkcharges .row_billoflading {
+  border: solid 1px #2F302F;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+}
+.checkcharges .col_left {
+  border-radius: unset !important;
+}
+.checkcharges .col_left:after {
+  display: none;
+}
+.checkcharges .col_left .mycell:first-child {
+  font-weight: normal;
+}
+.checkcharges .col_left .mycell {
+  border-bottom: solid 1px #C7C7C7;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  vertical-align: middle;
+}
+.checkcharges .col_left .mycell img {
+  width: auto;
+  height: auto;
+  filter: brightness(100%);
+  position: unset;
+}
+.checkcharges .col_left .mycell a {
+  background: #FCD804;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  display: flex;
+  float: right;
+  max-width: 68%;
+  align-items: center;
+  justify-content: center;
+}

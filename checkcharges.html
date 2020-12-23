@@ -63,7 +63,7 @@
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Tra vận đơn</a></li>
-                                            <li><a class="dropdown-item" href="#">Tra cước và thời gian vận chuyển</a></li>
+                                            <li><a class="dropdown-item" href="checkcharges.html">Tra cước và thời gian vận chuyển</a></li>
                                             <li><a class="dropdown-item" href="#">Danh sách bưu cục</a></li>
                                             <li><a class="dropdown-item" href="#">Chính sách</a></li>
                                             <li><a class="dropdown-item" href="#">Bảng giá</a></li>
@@ -124,7 +124,7 @@
                                 <i class="dropdown-btn fas fa-caret-down"></i>
                                 <ul class="dropdown-container">
                                     <li><a class="dropdown-item" href="#">Tra vận đơn</a></li>
-                                    <li><a class="dropdown-item" href="#">Tra cước và thời gian vận chuyển</a></li>
+                                    <li><a class="dropdown-item" href="checkcharges.html">Tra cước và thời gian vận chuyển</a></li>
                                     <li><a class="dropdown-item" href="#">Danh sách bưu cục</a></li>
                                     <li><a class="dropdown-item" href="policy.html">Chính sách</a></li>
                                     <li><a class="dropdown-item" href="#">Bảng giá</a></li>
@@ -160,29 +160,173 @@
             </div>
         </header>
         <main>
-            <section class="banner banner_billoflading">
-                <div class="container container_banner">
-                    <img class="img_banner" src="images/tinnhanh/vandon.png" alt=""/>
-                    <h1>Hệ Thống Chuyển Phát Toàn Quốc</h1>
-                    
-                   
+            <section class="banner_service banner_shipping banner_checkcharges" style="background-image:url('images/tinnhanh/tracuocvavanchuyen.png');">
+                <h1>Tra cước và vận chuyển </h1>
+                <div class="tabs_services">
+                    <div class="container">
+                        
+                        <div class="tab-content" id="myTabContent">
+                            <div class="fade show" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <form action="">
+                                        <div class="tab_content_bottom">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <p class="title">Nhập thông tin bưu kiện</p>
+                                                </div>
+                                                <div class="col-lg-12 col_left col-xl-12">
+                                                    <div class="row row_select">
+                                                        
+                                                        <div class="col-lg-4 col-xl-4">
+                                                            <label>Nơi gửi:</label>
+                                                            <select name="tinh1" id="tinh1">
+                                                                <option value="volvo">Hồ Chí Minh</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="opel">Opel</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4 col-xl-4">
+                                                            <label></label>
+                                                            <select name="quan1" id="quan1">
+                                                                <option value="volvo">Quận 1</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="opel">Opel</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row_select">
+                                                        
+                                                        <div class="col-lg-4 col-xl-4">
+                                                            <label>Nơi nhận:</label>
+                                                            <select name="tinh2" id="tinh2">
+                                                                <option value="volvo">Hồ Chí Minh</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="opel">Opel</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4 col-xl-4">
+                                                            <label></label>
+                                                            <select name="quan2" id="quan2">
+                                                                <option value="volvo">Quận 1</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="opel">Opel</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
+
+<div class="row row_event">
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-6 col6 mb-2">
+                                        <div class="row d-flex justify-content-start align-items-center">
+                                            <label class="col-lg-4 col-md-12 col-sm-4 col-12 text-dark mb-lg-0">Số kiện <sup class="text-danger">*</sup></label>
+                                            <div class="col-lg-6 col-md-12 col-sm-6 col-9">
+                                                <input type="number" class="form-control formcontrol" name="package_no" id="package_no" value="1">
+                                            </div>
+                                            <span id="err_package_no" generated="true" class="error" style="display: none">Nhập số kiện</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-6  col6 mb-2">
+                                        <div class="row d-flex justify-content-start align-items-center">
+                                            <label class="col-lg-5 col-md-12 col-sm-5 col-12 text-dark mb-lg-0">Trọng lượng <sup class="text-danger">*</sup></label>
+                                            <div class="col-lg-5 col-md-10 col-sm-5 col-9">
+                                                <input type="number" class="form-control formcontrol" name="weight" id="weight" value="1">
+                                            </div>
+                                            <label class="col-lg-1 col-md-2 col-sm-1 col-3 text-dark mb-lg-0">KG</label>
+                                            <span id="err_weight" generated="true" class="error" style="display: none">Nhập trọng lượng</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <div class="row d-flex justify-content-start align-items-center">
+                                            <label class="col-lg-5 col-md-12 col-sm-3  col-12 text-dark mb-lg-0">Số tiền thu hộ</label>
+                                            <div class="col-lg-6 col-md-10 col-sm-8 col-9 col-10">
+                                                <input type="text" class="form-control formcontrol" name="cod_amt" id="cod_amt" value="15,000" onkeyup="FormatNumber(this);">
+                                            </div>
+                                            <label class="col-lg-1 col-md-2 col-sm-1 col-2 text-dark mb-lg-0">VNĐ</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                                   
+
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-xl-12 col_right">
+                                                    <label>Chọn loại hàng hóa:</label>
+ <ul class="list-group list-group-horizontal characteristics_of_goods">                                       
+
+<li class="list-group-item col-md-3  col-sm-3 current"><div><img class="img_banner" src="images/tinnhanh/dthh1.png" alt=""/></div>Tài liệu </li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh2.png" alt=""/></div>Thời trang Mỹ phẩm</li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh3.png" alt=""/></div>Đồ điện tử </li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh4.png" alt=""/></div>Dược phẩm </li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh5.png" alt=""/></div>Thực phẩm </li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh6.png" alt=""/></div>Đồ tươi sống </li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh7.png" alt=""/></div>Đồ có pin </li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh8.png" alt=""/></div>Chất bột nước </li>
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh9.png" alt=""/></div>Chất dễ cháy</li>
+
+<li class="list-group-item col-md-3  col-sm-3 "><div><img class="img_banner" src="images/tinnhanh/dthh10.png" alt=""/></div>Hàng hóa thông thường</li>
+
+
+
+</ul>
+
+
+                                                    <input class="send" type="button" value="Tra giá">
+                                                </div>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
                     
                 </div>
-                <div class="container container_billoflading">
+            </section>
+  
+   
+
+            <section class="banner banner_billoflading checkcharges">
+              
+                <div class="container">
                     <div class="row_billoflading row">
                         <div class="col-lg-6 col-xl-6 col_left">
                             <div class="info_billoflading ">
                                 <div class="myrow">
-                                    <div class="mycell">Mã vận đơn:</div>
-                                    <div class="mycell code">123456</div>
+                                    <div class="mycell code">CPN</div>
+                                    <div class="mycell">
+                                        <a class="btn">
+                                        <span class="icon ntl-Box-List"> 
+                                        <img class="img_banner" src="images/tinnhanh/taovandon.png" alt=""/></span><span> Tạo vận đơn</span></a>
+                                    </div>
                                 </div>
                                 <div class="myrow">
-                                    <div class="mycell">Tên sản phẩm:</div>
-                                    <div class="mycell">VONG ĐA MÁY SỢI TỜ KHAI</div>
+                                    <div class="mycell">Cước chính ( VNĐ ):</div>
+                                    <div class="mycell">94.852</div>
                                 </div>
                                 <div class="myrow">
-                                    <div class="mycell">Dịch vụ:</div>
-                                    <div class="mycell">Đường bộ</div>
+                                    <div class="mycell">Phí COD ( VNĐ ): </div>
+                                    <div class="mycell">0</div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Thời gian toàn trình dự kiến : </div>
+                                    <div class="mycell">36h</div>
                                 </div>
                                 
                             </div>
@@ -191,25 +335,93 @@
                         <div class="col-lg-6 col-xl-6 col_left">
                             <div class="info_billoflading ">
                                 <div class="myrow">
-                                    <div class="mycell">Mã vận đơn:</div>
-                                    <div class="mycell code">123456</div>
+                                    <div class="mycell code">CPN</div>
+                                    <div class="mycell">
+                                        <a class="btn">
+                                        <span class="icon ntl-Box-List"> 
+                                        <img class="img_banner" src="images/tinnhanh/taovandon.png" alt=""/></span> Tạo vận đơn</a>
+                                    </div>
                                 </div>
                                 <div class="myrow">
-                                    <div class="mycell">Tên sản phẩm:</div>
-                                    <div class="mycell">VONG ĐA MÁY SỢI TỜ KHAI</div>
+                                    <div class="mycell">Cước chính ( VNĐ ):</div>
+                                    <div class="mycell">94.852</div>
                                 </div>
                                 <div class="myrow">
-                                    <div class="mycell">Dịch vụ:</div>
-                                    <div class="mycell">Đường bộ</div>
+                                    <div class="mycell">Phí COD ( VNĐ ): </div>
+                                    <div class="mycell">0</div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Thời gian toàn trình dự kiến : </div>
+                                    <div class="mycell">36h</div>
                                 </div>
                                 
                             </div>
                          
                         </div>
+
+                        <div class="col-lg-6 col-xl-6 col_left">
+                            <div class="info_billoflading ">
+                                <div class="myrow">
+                                    <div class="mycell code">CPN</div>
+                                    <div class="mycell">
+                                        <a class="btn">
+                                        <span class="icon ntl-Box-List"> 
+                                        <img class="img_banner" src="images/tinnhanh/taovandon.png" alt=""/></span> Tạo vận đơn</a>
+                                    </div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Cước chính ( VNĐ ):</div>
+                                    <div class="mycell">94.852</div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Phí COD ( VNĐ ): </div>
+                                    <div class="mycell">0</div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Thời gian toàn trình dự kiến : </div>
+                                    <div class="mycell">36h</div>
+                                </div>
+                                
+                            </div>
+                         
+                        </div>
+
+
+
+
+                        <div class="col-lg-6 col-xl-6 col_left">
+                            <div class="info_billoflading ">
+                                <div class="myrow">
+                                    <div class="mycell code">CPN</div>
+                                    <div class="mycell">
+                                        <a class="btn">
+                                        <span class="icon ntl-Box-List"> 
+                                        <img class="img_banner" src="images/tinnhanh/taovandon.png" alt=""/></span> Tạo vận đơn</a>
+                                    </div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Cước chính ( VNĐ ):</div>
+                                    <div class="mycell">94.852</div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Phí COD ( VNĐ ): </div>
+                                    <div class="mycell">0</div>
+                                </div>
+                                <div class="myrow">
+                                    <div class="mycell">Thời gian toàn trình dự kiến : </div>
+                                    <div class="mycell">36h</div>
+                                </div>
+                                
+                            </div>
+                         
+                        </div>
+
+
+
                     </div>
                 </div>
             </section>
-            
+
             <section class="hotline" style="background-image:url('images/tinnhanh/banner_bg.png');">
                 <div class="container">
                     <div class="hotline_title text-center">
